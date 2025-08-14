@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Exo_2 } from "next/font/google";
+
+const exo2 = Exo_2({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"], // or a range like '100..900'
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` antialiased bg-white`}>
+      <body className={` antialiased bg-white ${exo2.className}`}>
         <Navbar />
         {children}
         <Footer />

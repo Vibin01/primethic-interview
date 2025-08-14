@@ -23,12 +23,12 @@ export default function ConnectECSection() {
           </div>
 
           {/* Subheading */}
-          <h3 className="text-[32px] italic font-[#1B1C17] font-extrabold my-8">
+          <h3 className=" text-[24px] xl:text-[28px] 2xl:text-[32px] italic font-[#1B1C17] font-extrabold my-8">
             Interview Scheduling-Prediction Platform
           </h3>
 
           {/* Description */}
-          <p className="text-[#1B1C17] text-[24px] font-medium  leading-relaxed mb-5">
+          <p className="text-[#1B1C17] text-[18px] xl:text-[22px] 2xl:text-[24px] font-medium  leading-relaxed mb-5">
             The No-Show Predictor does more than schedule interviews—it
             anticipates, prevents, and enables action before no-shows happen.
             This feature empowers recruiters to turn uncertainty into confidence

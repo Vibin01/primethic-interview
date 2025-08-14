@@ -68,7 +68,7 @@ export default function BehavioralScienceSection() {
       />
 
       <div className="  mx-auto text-center">
-        <h2 className="text-3xl md:text-[48px] font-bold my-12">
+        <h2 className="text-3xl xl:text-[48px] font-bold my-12">
           Powered by Established Behavioral Science
         </h2>
 
@@ -104,13 +104,13 @@ export default function BehavioralScienceSection() {
           ))}
           {activeTab && (
             <div className="w-full text-center mt-4">
-              <p className="text-[24px] md:text-[28px] text-[#0668E1] italic font-extrabold my-6">
+              <p className="text-[20px] xl:text-[24px] 2xl:text-[28px] text-[#0668E1] italic font-extrabold my-6">
                 {tabs.find((tab) => tab.tab === activeTab)?.heading}
               </p>
-              <p className=" text-[18px] md:text-[22px] font-medium my-6 2xl:h-[60px]">
+              <p className=" text-[18px] xl:text-[20px] 2xl:text-[22px] font-medium my-6 2xl:h-[60px]">
                 {tabs.find((tab) => tab.tab === activeTab)?.content}
               </p>
-              <p className="text-[28px] md:text-[32px] text-[#1B1C17] italic font-extrabold">
+              <p className="text-[26px] xl:text-[28px] 2xl:text-[32px] text-[#1B1C17] italic font-extrabold">
                 {tabs.find((tab) => tab.tab === activeTab)?.author}
               </p>
             </div>

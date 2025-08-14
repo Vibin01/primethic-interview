@@ -16,13 +16,13 @@ const PriceTag = () => {
             zIndex: -1,
           }}
         />
-        <h1 className="text-2xl md:text-[48px] text-[#1B1C17] font-bold">
+        <h1 className="text-2xl xl:text-3xl 2xl:text-[48px] text-[#1B1C17] font-bold">
           Prediction Doesn’t Have a Price Tag—It’s Priceless!
         </h1>
-        <h2 className=" md:text-[32px] text-[#1B1C17] font-bold">
+        <h2 className=" xl:text-3xl 2xl:text-[32px] text-[#1B1C17] font-bold">
           That’s Why Connect EC Is Completely Free.
         </h2>
-        <button className="px-6 py-3 mt-4 text-[24px] font-bold h-[80px] w-[320px] bg-[linear-gradient(90deg,#004CAC_0%,#006AE9_50%,#0074FF_100%)] text-white rounded-full  hover:bg-blue-700 transition">
+        <button className=" px-3 xl:px-6 py-2 xl:py-3 mt-4 text-[20px] xl:text-[24px] font-bold xl:h-[80px] xl:w-[320px] bg-[linear-gradient(90deg,#004CAC_0%,#006AE9_50%,#0074FF_100%)] text-white rounded-full  hover:bg-blue-700 transition">
           Download EC for Free
         </button>
       </section>

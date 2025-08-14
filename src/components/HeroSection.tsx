@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section className=" xl:px-[7%] px-[3%]  bg-[#FFFFFF4D] relative overflow-hidden  ">
       {/* Left Content */}
       <div
-        className="bg-[#0668E166] rounded-full h-[700px] w-[700px] absolute -left-14 -top-[20px] blur-[150px]  opacity-[90%]"
+        className="bg-[#0668E166] rounded-full h-[700px] w-[850px] absolute -left-40 -top-[10px] blur-[200px]  "
         style={{
           zIndex: -1,
         }}
@@ -23,23 +23,23 @@ const HeroSection = () => {
       />
       <div className="flex flex-col md:flex-row items-center justify-center bg-[#FFFFFF5D] xl:-mx-[10%] -mx-[3%] px-[3%] py-[10%] gap-[3%] ">
         <div className="xl:max-w-[50%] md:max-w-[65%] max-w-[80%] ">
-          <h2 className="text-2xl md:text-[40px] font-normal text-[#1B1C17] mb-2">
+          <h2 className="text-2xl xl:text-3xl 2xl:text-[40px] font-normal text-[#1B1C17] mb-2">
             Interview Scheduling –{" "}
-            <span className="text-[#0668E1] font-medium">
+            <span className="text-[#0668E1] font-semibold">
               Prediction Platform?
             </span>
           </h2>
-          <h1 className="text-2xl md:text-[40px] font-bold mb-6">
+          <h1 className="text-2xl  xl:text-3xl 2xl:text-[40px] font-bold mb-6">
             Absolutely, Yes!
           </h1>
-          <p className="text-[#1B1C17] max-w-[85%] text-[24px] font-medium  mb-8 ">
+          <p className="text-[#1B1C17] max-w-[85%] xl:text-[20px] 2xl:text-[24px] font-medium  mb-8 ">
             <span className="font-bold">Connect EC</span> is a gamified ethical
             hiring platform that streamlines interview scheduling. EC transforms
             potential no-shows into &quot;know-shows&quot; by anticipating and
             predicting drop-offs— behavioral insights that improve scheduling,
             minimize disruptions, and keep hiring on track.
           </p>
-          <button className="px-6 py-3 mt-4 text-[24px] font-bold h-[80px] w-[320px] bg-[linear-gradient(90deg,#004CAC_0%,#006AE9_50%,#0074FF_100%)] text-white rounded-full  hover:bg-blue-700 transition">
+          <button className=" px-3 xl:px-6 py-2 xl:py-3 mt-4 text-[20px] xl:text-[24px] font-bold xl:h-[80px] xl:w-[320px] bg-[linear-gradient(90deg,#004CAC_0%,#006AE9_50%,#0074FF_100%)] text-white rounded-full  hover:bg-blue-700 transition">
             Download EC for Free
           </button>
         </div>

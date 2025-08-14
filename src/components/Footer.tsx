@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0074FF] text-white text-[20px] pt-[5%] pb-12 px-6">
+    <footer className="bg-[#0074FF] text-white text-[16px] xl:text-[20px] pt-[5%] pb-12 px-6">
       <div className="flex xl:flex-row flex-col-reverse justify-center items-center xl:justify-between xl:px-[3%]  mx-auto">
         <div className="xl:w-1/4 mt-10 xl:mt-0">
           <img src="/logo-white.png" alt="Logo" className="h-16 mb-4" />
@@ -21,7 +21,9 @@ export default function Footer() {
         <div className=" w-[100%] hidden  xl:w-3/4 md:flex flex-wrap_- flex-row justify-center  md:justify-evenly xl:grid grid-cols-1 xl:grid-cols-3  gap-8">
           {/* Employer Links */}
           <div>
-            <h3 className="font-normal text-[40px] mb-3">Employer</h3>
+            <h3 className="font-normal text-[28px] xl:text-[32px] 2xl:text-[40px] mb-3">
+              Employer
+            </h3>
             <ul className="space-y-2 ">
               <li>Interview Scheduling Software</li>
               <li>Recruiter Motivation System (RMS)</li>
@@ -33,7 +35,9 @@ export default function Footer() {
 
           {/* Candidate Links */}
           <div>
-            <h3 className="font-normal text-[40px] mb-3">Candidate</h3>
+            <h3 className="font-normal text-[28px] xl:text-[32px] 2xl:text-[40px] mb-3">
+              Candidate
+            </h3>
             <ul className="space-y-2 ">
               <li>Gamified Hiring Platform</li>
               <li>Job Search Platform</li>
@@ -45,7 +49,9 @@ export default function Footer() {
 
           {/* Recruiter Links */}
           <div>
-            <h3 className="font-normal text-[40px] mb-3">Recruiter</h3>
+            <h3 className="font-normal text-[28px] xl:text-[32px] 2xl:text-[40px] mb-3">
+              Recruiter
+            </h3>
             <ul className="space-y-2 ">
               <li>Job Posting Platform</li>
               <li>Feedback Management Platform</li>
@@ -79,7 +85,7 @@ export default function Footer() {
           </div>
 
           {/* Footer Links */}
-          <div className="text-[18px] flex-- justify-center-- 2xl:justify-end-- font-medium space-x-3">
+          <div className="text-[16px] xl:text-[18px] flex-- justify-center-- 2xl:justify-end-- font-medium space-x-3">
             <a href="#">About us</a>| <a href="#">Careers</a>|{" "}
             <a href="#">Terms & Conditions</a>| {""}
             <br className="hidden 2xl:block" />
@@ -89,7 +95,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <p className="text-center text-20 font-normal mt-6">
+      <p className="text-center text-[16px] 2xl:text-[18px] xl:text-20 font-normal mt-6">
         © Copyright Primethic Private Limited {new Date().getFullYear()}. All
         Rights Reserved.
       </p>

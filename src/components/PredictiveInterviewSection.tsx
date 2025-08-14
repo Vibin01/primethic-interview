@@ -81,7 +81,7 @@ export default function PredictiveInterviewSection() {
       />
       <div className=" mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl md:text-[48px] font-bold text-center mb-14">
+        <h2 className="text-3xl xl:text-[48px] font-bold text-center mb-14">
           The First-Ever Predictive Interview Scheduling Platform
         </h2>
 
@@ -93,10 +93,10 @@ export default function PredictiveInterviewSection() {
               className="flex flex-col xl:flex-row relative gap-6 items-start"
             >
               <div className="xl:w-1/3 w-[100%]  flex flex-col items-center">
-                <h3 className="text-[#1B1C17] text-[28px] md:text-[32px] font-bold mb-6">
+                <h3 className="text-[#1B1C17] text-[26px] xl:text-[28px] 2xl:text-[32px] font-bold mb-6">
                   {item.title}
                 </h3>
-                <div className="w-[120px] h-[120px] shadow-[2px_4px_8px_-2px_#00000026,_-2px_-2px_0px_2px_#FFFFFF33,_0px_0px_10px_0px_#0668E126] bg-[#FFFFFF33] rounded-[30px] flex items-center justify-center ">
+                <div className="w-[100px] h-[100px] xl:w-[120px] xl:h-[120px] shadow-[2px_4px_8px_-2px_#00000026,_-2px_-2px_0px_2px_#FFFFFF33,_0px_0px_10px_0px_#0668E126] bg-[#FFFFFF33] rounded-[30px] flex items-center justify-center ">
                   <img src={item.icon} alt="image" className="object-contain" />
                 </div>
               </div>
@@ -107,7 +107,7 @@ export default function PredictiveInterviewSection() {
               />
               {/* Text */}
               <div className="xl:w-2/3 w-[100%] flex items-center justify-center ">
-                <p className="xl:max-w-2/4 max-w-3/4 text-[22px] text-[#1B1C17] leading-relaxed text-justify xl:text-start">
+                <p className="xl:max-w-2/4 max-w-3/4 text-[18px] xl:text-[22px] text-[#1B1C17] leading-relaxed text-justify xl:text-start">
                   {item.desc}
                 </p>
               </div>
