@@ -5,8 +5,8 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer className="bg-[#0074FF] text-white text-[20px] pt-[5%] pb-12 px-6">
-      <div className="flex flex-row justify-between px-[3%]">
-        <div className="w-1/4">
+      <div className="flex xl:flex-row flex-col-reverse justify-center items-center xl:justify-between xl:px-[3%]  mx-auto">
+        <div className="xl:w-1/4 mt-10 xl:mt-0">
           <img src="/logo-white.png" alt="Logo" className="h-16 mb-4" />
           <p className="mt-4 ">
             155/201, Kamarajapuram,
@@ -18,7 +18,7 @@ export default function Footer() {
           <p className="mt-4 ">Phone : +91 9499045981</p>
           <p className="">Email : connect@primethic.com</p>
         </div>
-        <div className=" w-3/4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className=" w-[100%] hidden  xl:w-3/4 md:flex flex-wrap_- flex-row justify-center  md:justify-evenly xl:grid grid-cols-1 xl:grid-cols-3  gap-8">
           {/* Employer Links */}
           <div>
             <h3 className="font-normal text-[40px] mb-3">Employer</h3>
@@ -57,23 +57,20 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col items-end pl-[2%] py-4">
-        <div className="w-3/4  border-t border-[#FFFFFF] my-8"></div>
+        <div className="sm:w-[100%] md:w-3/4  border-t border-[#FFFFFF] my-8"></div>
       </div>
 
-      {/* Divider */}
-
       {/* Bottom Row */}
-      <div className="flex flex-row justify-between ">
-        <div className="flex w-1/4 "></div>
+      <div className="flex flex-row justify-center md:justify-between ">
+        <div className="2xl:flex hidden w-1/4 "></div>
 
-        <div className="w-3/4 pl-[2%] grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* App Store Buttons */}
-          <div className="flex gap-2">
+        <div className="2xl:w-3/4 2xl:pl-[2%] grid grid-cols-1 md:grid-cols-3  gap-8">
+          <div className="flex justify-center 2xl:justify-start gap-2">
             <img src="/app-logo.png" alt="Google Play" className="h-10" />
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-6 text-2xl">
+          <div className="flex justify-center 2xl:justify-start gap-6 text-2xl">
             <FaFacebookF />
             <FaXTwitter />
             <FaInstagram />
@@ -82,10 +79,10 @@ export default function Footer() {
           </div>
 
           {/* Footer Links */}
-          <div className="text-[18px] font-medium space-x-3">
+          <div className="text-[18px] flex-- justify-center-- 2xl:justify-end-- font-medium space-x-3">
             <a href="#">About us</a>| <a href="#">Careers</a>|{" "}
-            <a href="#">Terms & Conditions</a>
-            <br />
+            <a href="#">Terms & Conditions</a>| {""}
+            <br className="hidden 2xl:block" />
             <a href="#">Privacy Policy</a>| <a href="#">FAQs</a>
           </div>
         </div>

@@ -24,7 +24,7 @@ export default function BehavioralScienceSection() {
         "Signal Theory emphasizes the importance of signals in communication.",
       content:
         "In the context of hiring, it helps understand how candidates signal their intentions through their actions.",
-      author: "Judith A. Ouellette & Wendy Wood",
+      author: "Andrew Michael Spence ",
     },
     {
       tab: "Nudge Theory",
@@ -35,7 +35,7 @@ export default function BehavioralScienceSection() {
         "Nudge Theory suggests that subtle changes in the environment can influence behavior.",
       content:
         "In hiring, nudges can help candidates stay committed to their interview schedules.",
-      author: "Judith A. Ouellette & Wendy Wood",
+      author: "Richard Thaler and Cass Sunstein ",
     },
     {
       tab: "Social Influence Theory",
@@ -46,7 +46,7 @@ export default function BehavioralScienceSection() {
         "Social Influence Theory suggests that social connections can influence behavior.",
       content:
         "In hiring, social influence theory can help candidates stay committed to their interview schedules.",
-      author: "Judith A. Ouellette & Wendy Wood",
+      author: "Robert Cialdini",
     },
   ];
 
@@ -55,19 +55,25 @@ export default function BehavioralScienceSection() {
   return (
     <section className="py-16 relative text-[#1B1C17]  ">
       <div
-        className="bg-[#0668E166] rounded-full h-[150px] w-[150px] absolute right-1/6 top-[70px] backdrop-blur-[800px]  shadow-[00px_0px_290px_250px_#0668E166] opacity-[16%]"
+        className="bg-[#0668E14D] rounded-full h-[690px] w-[734px] absolute right-4 top-[70px] blur-[280px] opacity-[60%]"
         style={{
-          // backdropFilter: "blur(600px)",
           zIndex: -1,
         }}
       />
+      <div
+        className="bg-[#CCB0FF99] rounded-full h-[590px] w-[634px] absolute left-10 top-[70px] blur-[180px] "
+        style={{
+          zIndex: -1,
+        }}
+      />
+
       <div className="  mx-auto text-center">
-        <h2 className="text-2xl md:text-[48px] font-bold my-12">
+        <h2 className="text-3xl md:text-[48px] font-bold my-12">
           Powered by Established Behavioral Science
         </h2>
 
         {/* Tabs */}
-        <div className="bg-[#FFFFFF1A] h-[450px] p-10 shadow-[0px_0px_10px_0px_#0668E11A] rounded-[40px]  flex flex-wrap justify-center items-center gap-4 mb-8">
+        <div className="bg-[#FFFFFF1A]  2xl:h-[450px] p-10 shadow-[0px_0px_10px_0px_#0668E11A] rounded-[40px]  flex flex-wrap justify-center items-center gap-4 mb-8">
           {/* Active Tab */}
           {tabs.map((tab, index) => (
             <div
@@ -98,13 +104,13 @@ export default function BehavioralScienceSection() {
           ))}
           {activeTab && (
             <div className="w-full text-center mt-4">
-              <p className="text-[28px] text-[#0668E1] italic font-extrabold my-6">
+              <p className="text-[24px] md:text-[28px] text-[#0668E1] italic font-extrabold my-6">
                 {tabs.find((tab) => tab.tab === activeTab)?.heading}
               </p>
-              <p className="text-[22px] font-medium my-6 h-[60px]">
+              <p className=" text-[18px] md:text-[22px] font-medium my-6 2xl:h-[60px]">
                 {tabs.find((tab) => tab.tab === activeTab)?.content}
               </p>
-              <p className="text-[32px] text-[#1B1C17] italic font-extrabold">
+              <p className="text-[28px] md:text-[32px] text-[#1B1C17] italic font-extrabold">
                 {tabs.find((tab) => tab.tab === activeTab)?.author}
               </p>
             </div>

@@ -7,17 +7,22 @@ import PriceTag from "./PriceTag";
 
 const HeroSection = () => {
   return (
-    <section className=" md:px-[7%]   relative overflow-hidden  ">
+    <section className=" xl:px-[7%] px-[3%]  bg-[#FFFFFF4D] relative overflow-hidden  ">
       {/* Left Content */}
       <div
-        className="bg-[#0668E166] rounded-full h-[300px] w-[450px] absolute left-0 top-[220px] backdrop-blur-[600px]  shadow-[00px_0px_290px_250px_#0668E166] opacity-[40%]"
+        className="bg-[#0668E166] rounded-full h-[700px] w-[700px] absolute -left-14 -top-[20px] blur-[150px]  opacity-[90%]"
         style={{
-          // backdropFilter: "blur(600px)",
           zIndex: -1,
         }}
       />
-      <div className="flex flex-col-reverse md:flex-row items-center justify-center bg-[#FFFFFF5D] -mx-[10%]  py-[10%] gap-[3%]">
-        <div className="max-w-[50%] ">
+      <div
+        className="bg-[#CCB0FF66] rounded-full h-[500px] w-[500px] absolute right-20 top-[220px] blur-[140px]  opacity-[100%]"
+        style={{
+          zIndex: -1,
+        }}
+      />
+      <div className="flex flex-col md:flex-row items-center justify-center bg-[#FFFFFF5D] xl:-mx-[10%] -mx-[3%] px-[3%] py-[10%] gap-[3%] ">
+        <div className="xl:max-w-[50%] md:max-w-[65%] max-w-[80%] ">
           <h2 className="text-2xl md:text-[40px] font-normal text-[#1B1C17] mb-2">
             Interview Scheduling –{" "}
             <span className="text-[#0668E1] font-medium">
@@ -40,7 +45,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Image */}
-        <div className="max-w-[50%]  ">
+        <div className="xl:max-w-[50%] md:max-w-[30%]   flex items-center justify-center">
           <Image
             src="/Recruiter.png"
             alt="EC Illustration"

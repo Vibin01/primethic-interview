@@ -1,18 +1,23 @@
 export default function ConnectECSection() {
   return (
-    <section className="relative py-32 px-6 bg-[#FFFFFF1A] -mx-[10%] ">
+    <section className="relative py-32  bg-[#FFFFFF1A] xl:-mx-[10%] -mx-[3%] px-[3%]">
       <div
-        className="bg-[#0668E14D] rounded-full h-[150px] w-[150px] absolute right-1/6 bottom-1/3   shadow-[00px_0px_310px_250px_#0668E14D] opacity-[20%]"
+        className="bg-[#CCB0FF99] rounded-full h-[450px] w-[750px] absolute right-20 bottom-2/6 blur-[200px] "
         style={{
-          backdropFilter: "blur(800px)",
+          zIndex: -1,
+        }}
+      />
+      <div
+        className="bg-[#0668E14D] rounded-full h-[450px] w-[750px] absolute left-20 top-2/6 blur-[800px] "
+        style={{
           zIndex: -1,
         }}
       />
       <div className=" mx-auto px-[10%]">
         <div className="bg-[#FFFFFF1A] rounded-[40px] shadow-[0px_0px_4px_0px_#0668E14D] border border-gray-200 p-10  text-center relative">
           {/* Heading with capsule style */}
-          <div className="absolute z-20 -top-8 left-1/2 -translate-x-1/2">
-            <span className="bg-white rounded-[40px] border border-gray-200  px-20 py-2 text-[40px] font-extrabold text-[#0668E1] shadow-[0px_2px_4px_0px_#0668E14D]">
+          <div className="absolute z-20 -top-8 left-1/2 -translate-x-1/2 min-w-[300px]">
+            <span className="bg-white rounded-[40px]  border border-gray-200 px-5  xl:px-20 py-2 text-3xl xl:text-[40px] font-extrabold text-[#0668E1] shadow-[0px_2px_4px_0px_#0668E14D]">
               Connect EC
             </span>
           </div>

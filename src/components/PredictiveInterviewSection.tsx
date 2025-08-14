@@ -28,40 +28,74 @@ export default function PredictiveInterviewSection() {
   ];
 
   return (
-    <section className="py-16 px-6 relative bg-[#FFFFFF7A] -mx-[10%]">
+    <section className="py-16  relative bg-[#FFFFFF7A] xl:-mx-[10%] -mx-[3%] px-[3%]">
       <div
-        className="bg-[#0668E166] rounded-full h-[80px] w-[80px] absolute left-10 top-[220px] backdrop-blur-[800px]  shadow-[00px_0px_110px_250px_#0668E166] opacity-[20%]"
+        className="bg-[#0668E133] rounded-full h-[600px] w-[450px] absolute right-70 -top-[150px] blur-[180px]"
         style={{
           // backdropFilter: "blur(600px)",
           zIndex: -1,
         }}
       />
       <div
-        className="bg-[#CCB0FF80] rounded-full h-[80px] w-[80px] absolute right-1/5 top-[420px]   shadow-[00px_0px_310px_250px_#CCB0FF80] opacity-[100%]"
+        className="bg-[#0668E133] rounded-full h-[700px] w-[400px] absolute left-40 top-[150px] blur-[200px]"
         style={{
-          backdropFilter: "blur(800px)",
           zIndex: -1,
         }}
       />
       <div
-        className="bg-[#0668E14D] rounded-full h-[150px] w-[150px] absolute left-1/6 bottom-[260px]   shadow-[00px_0px_310px_250px_#0668E14D] opacity-[50%]"
+        className="bg-[#0668E14D] rounded-full h-[500px] w-[400px] absolute right-50 bottom-[200px] blur-[200px]"
         style={{
-          backdropFilter: "blur(800px)",
+          zIndex: -1,
+        }}
+      />
+      <div
+        className="bg-[#CCB0FF80] rounded-full h-[500px] w-[400px] absolute right-90 top-[200px] blur-[220px]"
+        style={{
+          zIndex: -1,
+        }}
+      />
+      <div
+        className="bg-[#CCB0FF] rounded-full h-[300px] w-[200px] absolute left-60 top-[650px] blur-[140px]"
+        style={{
+          zIndex: -1,
+        }}
+      />
+      <div
+        className="bg-[#CCB0FF80] rounded-full h-[600px] w-[500px] absolute -left-10 -top-[50px] blur-[200px]"
+        style={{
+          zIndex: -1,
+        }}
+      />
+
+      <div
+        className="bg-[linear-gradient(180deg,rgba(126,105,156,0.6)_0%,rgba(209,175,255,0.06)_100%)] rounded-full h-[600px] w-[500px] absolute right-10 bottom-[250px] blur-[120px]"
+        style={{
+          zIndex: -1,
+        }}
+      />
+      <div
+        className="bg-[#0668E14D] rounded-full h-[400px] w-[700px] absolute left-10 bottom-[100px] blur-[200px]"
+        style={{
           zIndex: -1,
         }}
       />
       <div className=" mx-auto">
         {/* Heading */}
-        <h2 className="text-2xl md:text-[48px] font-bold text-center mb-14">
+        <h2 className="text-3xl md:text-[48px] font-bold text-center mb-14">
           The First-Ever Predictive Interview Scheduling Platform
         </h2>
 
         {/* Feature List */}
-        <div className="flex flex-col gap-24 my-20">
+        <div className="flex flex-col   gap-24 my-20">
           {features.map((item, idx) => (
-            <div key={idx} className="flex relative gap-6 items-start">
-              <div className="w-1/3  flex flex-col items-center">
-                <h3 className="text-[32px] font-bold mb-6">{item.title}</h3>
+            <div
+              key={idx}
+              className="flex flex-col xl:flex-row relative gap-6 items-start"
+            >
+              <div className="xl:w-1/3 w-[100%]  flex flex-col items-center">
+                <h3 className="text-[#1B1C17] text-[28px] md:text-[32px] font-bold mb-6">
+                  {item.title}
+                </h3>
                 <div className="w-[120px] h-[120px] shadow-[2px_4px_8px_-2px_#00000026,_-2px_-2px_0px_2px_#FFFFFF33,_0px_0px_10px_0px_#0668E126] bg-[#FFFFFF33] rounded-[30px] flex items-center justify-center ">
                   <img src={item.icon} alt="image" className="object-contain" />
                 </div>
@@ -69,11 +103,11 @@ export default function PredictiveInterviewSection() {
               <img
                 src={item.bgIcon}
                 alt="image"
-                className="absolute left-2/6 opacity-60"
+                className="hidden xl:block  absolute left-2/6 opacity-60"
               />
               {/* Text */}
-              <div className="w-2/3 flex items-center justify-center ">
-                <p className="max-w-2/4 text-[22px] text-[#1B1C17] leading-relaxed">
+              <div className="xl:w-2/3 w-[100%] flex items-center justify-center ">
+                <p className="xl:max-w-2/4 max-w-3/4 text-[22px] text-[#1B1C17] leading-relaxed text-justify xl:text-start">
                   {item.desc}
                 </p>
               </div>

@@ -3,18 +3,16 @@ import React from "react";
 const PriceTag = () => {
   return (
     <>
-      <section className="relative py-[10%] -mx-[10%] bg-[#FFFFFF8A] flex flex-col items-center justify-center text-center gap-8">
+      <section className="relative py-[10%] xl:-mx-[10%] -mx-[3%] px-[3%] bg-[#FFFFFF8A] flex flex-col items-center justify-center text-center gap-8">
         <div
-          className="bg-[#0668E166] rounded-full h-[150px] w-[150px] absolute right-1/6 top-1/2 backdrop-blur-[800px]  shadow-[00px_0px_290px_250px_#0668E166] opacity-[30%]"
+          className="bg-[#0668E14D] rounded-full h-[580px] w-[520px] absolute right-1 -bottom-10 blur-[120px] "
           style={{
-            // backdropFilter: "blur(600px)",
             zIndex: -1,
           }}
         />
         <div
-          className="bg-[#0668E166] rounded-full h-[150px] w-[150px] absolute left-1/6 top-1/2 backdrop-blur-[800px]  shadow-[00px_0px_290px_250px_#0668E166] opacity-[30%]"
+          className="bg-[#CCB0FF99] rounded-full h-[520px] w-[590px] absolute left-10 -bottom-5 blur-[120px] "
           style={{
-            // backdropFilter: "blur(600px)",
             zIndex: -1,
           }}
         />
